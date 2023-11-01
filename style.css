@@ -1,8 +1,25 @@
+/* import font: Overpass
+font-family: 'Overpass', sans-serif;
+*/
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@200&display=swap');
+
 body {
   margin: 0;
+  background: url('./assets/cork-board.png');
 }
 
 img {
-  width: 28%;
-  margin: 2%; 
+  width: 30%;
+  margin: calc(10%/6); 
+}
+
+nav {
+  background: url('./assets/greyzz.png');
+  text-transform: uppercase;
+  border-bottom: 10px groove #8f6749;
+  margin: calc(10%6);
+  padding: 2% 0;
+  text-align: center;
+  font-family: 'Overpass', sans-serif;
+  font-size: 1.8rem;
 }
