@@ -4,8 +4,13 @@ font-family: 'Overpass', sans-serif;
 @import url('https://fonts.googleapis.com/css2?family=Overpass:wght@200&display=swap');
 
 @keyframes fadeIn {
-  0% {opacity: 0;}
-  100% {opacity: 1;}
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
 body {
@@ -15,13 +20,15 @@ body {
 
 img {
   width: 30%;
-  margin: calc(10%/6); 
+  margin: calc(10%/6);
   filter: drop-shadow(2px 4px 6px black);
   animation: fadeIn 1.2s ease-in-out;
+  transition: transform 0.25, box-shadow 0.25;
 }
 
 img:hover {
-  
+  transform: translateY(-1.25rem);
+  box-shadow: 0 1.5em 2.5em -1.4em rgb(0, 0, 0);
 }
 
 nav {
@@ -33,4 +40,15 @@ nav {
   text-align: center;
   font-family: 'Overpass', sans-serif;
   font-size: 1.8rem;
+}
+
+footer {
+  background-color: #825d40;
+  color: #f6dbb9;
+  text-align: center;
+  padding: 1px 0;
+  background-position-y: bottom;
+  text-transform: lowercase;
+  font-family: sans-serif;
+  margin-top: 5%;
 }
